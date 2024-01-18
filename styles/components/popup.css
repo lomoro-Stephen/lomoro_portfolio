@@ -1,0 +1,154 @@
+/* Existing styles remain unchanged */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.hire__thank-popup{
+    z-index: 9999999;
+}
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width:fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+    
+}
+.fa-circle-check{
+    color: green;
+    
+}
+.pop-up-title{
+    color: green;
+
+}
+p{
+    color: green;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-xmark, .fa-paper-plane{
+    color: var(-color-light);
+}
+.close{
+    color: #000;
+}
+.closeBtn__wrap{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.popup__form-title{
+    color: #f1f5f9;
+}
+/* Add styles to the form container */
+.form-container {
+    width: 30%;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(27, 25, 25);
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%, -45%);
+    z-index: 999999;
+    margin-top: 10px;
+}
+.close__icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+.cancel,.close{
+    cursor: pointer;
+}
+.popup__form-label{
+    font-size: var(--size-xs);
+    color: var(--color-slate600);
+}
+/* Full-width input fields */
+.form-container input ,.form-container textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #f1f5f9;
+    background: transparent;
+    border-radius: 5px;
+    color: var(--color-slate400);
+}
+.form-container textarea{
+    height: 100px;
+}
+/* When the inputs get focus, do something */
+.form-container input:focus {
+    border: 1px solid #013b14;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.form-container .btn {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+@media (max-width: 475px){
+    .form-container {
+        width: 90%;
+    }
+    .popup__form-title{
+        font-size: var(--size-xl);
+    }
+    .popup-content {
+        width:90%;
+    }
+}
+/* xs*/
+
+/*@media (min-width: 475px){
+
+}
+/* sm*/
+/*@media (min-width: 640px){
+}
+/* md*/
+/* @media (min-width: 768px){
+ 
+}
+/* lg*/
+ /*@media (min-width: 1024px){
+ 
+}
+/* xl*/
+/* @media (min-width: 1280px){
+}
+/* 2xl*/
+/* @media (min-width: 1536px){
+  
+}

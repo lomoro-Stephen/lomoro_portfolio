@@ -1,0 +1,133 @@
+.work__title{
+    font-size: var(--size-2xl);
+    color: var(--color-light);
+}
+.work__header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.works__intro{
+    width: 80%;
+    font-size: var(--size-sm);
+    color: var(--color-slate600);
+    text-align: center;
+}
+.card__title{
+    font-size: var(--size-sm);
+    color: var(--color-indigo);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.service-wrap{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-card{
+    border: 1px solid var(--color-border);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+    
+}
+.service-card h5{
+    color: var(--color1);
+    font-size: 1rem;
+    text-align: center;
+}
+.CardText{
+    max-width: 60ch;
+    color: var(--color-slate600);
+    font-size: var(--size-sm);
+    margin: 1rem 0;
+    text-align: center;
+    
+}
+.service-card:hover{
+    box-shadow: 5px 10px 8px rgba(1, 17, 41,0.5);
+    cursor:pointer;
+    transform: translateY(-15px);
+}
+
+cards .card {
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+.imageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+/* xs*/
+@media (min-width: 475px){
+    .work-info{
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+    .work-info{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+        .work__title{
+        font-size: var(--size-3xl);
+    }
+    .works__intro{
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
+}
+/* sm*/
+@media (min-width: 640px){
+    .service-wrap{
+        grid-template-columns: 1fr 1fr;
+    }
+    .works__intro{
+        text-align: center;
+    }
+}
+/* md*/
+/* @media (min-width: 768px){
+ 
+}
+/* lg*/
+ @media (min-width: 1024px){
+     .service-wrap{
+        width: 80%;
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+    .works__intro{
+        width: 60ch;
+    }
+ 
+}
+/* xl*/
+ @media (min-width: 1280px){
+    .service-wrap{
+        width: 80%;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+    }
+}
+/* 2xl*/
+/* @media (min-width: 1536px){
+  
+}
+*/
